@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Gracias por tu compra! | Buena Pilcha</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --success: #10b981;
+      --bg-dark: #0a0a0a;
+      --card-bg: #121212;
+      --text-main: #ffffff;
+      --text-dim: #777;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-main);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .success-icon {
+      font-size: 80px;
+      color: var(--success);
+      margin-bottom: 20px;
+      animation: scaleUp 0.5s ease-out;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+
+    .brand-name {
+      color: var(--primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    .message {
+      max-width: 500px;
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .btn-home {
+      background: var(--primary);
+      padding: 14px 28px;
+      border-radius: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .btn-home:hover {
+      background: transparent;
+      border-color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .disclaimer {
+      margin-top: 60px;
+      padding: 15px 25px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px dashed #333;
+      border-radius: 10px;
+      color: var(--text-dim);
+      font-size: 14px;
+      max-width: 400px;
+    }
+
+    @keyframes scaleUp {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="success-icon">
+    <i class="bi bi-check-circle-fill"></i>
+  </div>
+
+  <span class="brand-name">Buena Pilcha</span>
+  <h1>Compra realizada con éxito</h1>
+  
+  <p class="message">
+    ¡Gracias por confiar en nosotros! Tu pedido está siendo procesado. 
+    Te enviaremos un correo electrónico con los detalles del envío a la brevedad.
+  </p>
+
+  <a href="/" class="btn-home">Volver a la tienda</a>
+
+  <div class="disclaimer">
+    <i class="bi bi-info-circle"></i> 
+    Sitio simulado ya que no hay un método de pago decidido.
+  </div>
+
+</body>
+</html>
