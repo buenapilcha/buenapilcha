@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Restringido | Área Técnica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Azul muy oscuro profesional */
+            color: #f8fafc;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Fondo sutil con un toque de luz */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(0,0,0,0) 70%);
+            top: 10%;
+            right: 10%;
+            z-index: -1;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(12px);
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: -0.025em;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.6;
+            color: #94a3b8;
+            margin-bottom: 2.5rem;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #0f172a;
+            padding: 12px 32px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .btn-contact:hover {
+            background-color: #cbd5e1;
+            transform: translateY(-2px);
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.1);
+            color: #60a5fa;
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <span class="badge">Próximamente</span>
+        <h1>Plataforma en desarrollo</h1>
+        <p>El sitio oficial aún no se encuentra activo para el público general. Si sos <b>Amaru</b>, por favor ponete en contacto a través del canal directo.</p>
+        
+        <a href="https://wa.me/5492477399308" class="btn-contact">
+            Contactar vía WhatsApp
+        </a>
+
+        <div class="footer-note">
+            © 2024 Proyecto Privado - Acceso limitado
+        </div>
+    </div>
+
+</body>
+</html>
